@@ -1,0 +1,21 @@
+strong {
+    color: rgb(0, 0, 109);
+}
+
+.logo {
+    width: 150px;
+    padding: 20px;
+}
+
+.img-perfil {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.img-eventos {
+    width: 600px;
+}
+
+.img-Plataforma {
+    width: 400px;
+}
