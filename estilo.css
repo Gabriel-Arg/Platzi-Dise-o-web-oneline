@@ -27,14 +27,21 @@ body header div nav ul li a {
 
 }
 
-
 strong {
     color: rgb(0, 0, 109);
+}
+
+.header {
+
 }
 
 .logo {
     width: 150px;
     padding: 20px;
+}
+
+.menu {
+
 }
 
 .img-perfil {
@@ -48,4 +55,76 @@ strong {
 
 .img-Plataforma {
     width: 400px;
+}
+
+.hero {
+
+}
+
+.portfolio {
+
+}
+
+.project {
+
+}
+
+.project-course [
+
+]
+
+.project-date {
+
+}
+
+.project-url {
+
+}
+
+.project-description {
+
+}
+
+.project-imageContainer {
+
+}
+
+.project-image {
+
+}
+
+.event {
+
+}
+
+.event-imageContainer {
+
+}
+
+.event-image {
+
+}
+
+.event-title {
+
+}
+
+.event-description {
+
+}
+
+.event-url {
+
+}
+
+.contact {
+
+}
+
+.form-email {
+
+}
+
+.footer {
+    
 }
