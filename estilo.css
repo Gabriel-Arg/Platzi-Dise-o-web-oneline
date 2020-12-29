@@ -1,3 +1,33 @@
+/* 
+REGLAS
+SELECTORES
+DECLARACIONES
+PROPIEDADES
+VALORES
+ */
+
+/* --------SELECTOR DE ETIQUETA-------------- */
+header {
+    background-color: pink;
+    color: red;
+}
+
+/* -------SELECTOR DESCENDENTE---------------- */
+body header div nav ul li a {
+    color: blue;
+}
+
+/* --------SELECTOR DE CLASE------------------- */
+.link {
+    
+}
+
+/* --------SELECTOR POR ID-------------------- */
+#portafolio {
+
+}
+
+
 strong {
     color: rgb(0, 0, 109);
 }
