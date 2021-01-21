@@ -46,7 +46,7 @@ strong {
 }
 /* -------------SECCION 1 HERO----------------- */
 .hero {
-
+    height: 300px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,6 +80,10 @@ h1 {
 
 }
 
+.project-details {
+    width: 500px;
+}
+
 .project-title 
 
 .project-course [
@@ -99,11 +103,11 @@ h1 {
 }
 
 .project-imageContainer {
-
+    width: 500px;
 }
 
 .project-image {
-
+    width: 500px;
 }
 /* ---------------SECCION 3 EVENTOS------------- */
 .event {
@@ -111,7 +115,6 @@ h1 {
 }
 
 .event-imageContainer {
-
 }
 
 .event-image {
