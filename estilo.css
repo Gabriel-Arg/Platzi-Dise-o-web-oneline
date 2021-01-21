@@ -6,29 +6,15 @@ PROPIEDADES
 VALORES
  */
 
-/* --------SELECTOR DE ETIQUETA-------------- */
-header {
-    background-color: pink;
-    color: red;
-}
-
 /* -------SELECTOR DESCENDENTE---------------- */
 body header div nav ul li a {
     color: blue;
 }
 
-/* --------SELECTOR DE CLASE------------------- */
-.link {
-    
-}
-
-/* --------SELECTOR POR ID-------------------- */
-#portafolio {
-
-}
-
-strong {
-    color: rgb(0, 0, 109);
+/* ----------ENCABEZADO-------------- */
+header {
+    background-color: pink;
+    color: red;
 }
 
 .header {
@@ -44,11 +30,14 @@ strong {
 
 }
 
-.img-perfil {
-    width: 400px;
-    border-radius: 50%;
+.link {
+    
 }
 
+strong {
+    color: rgb(0, 0, 109);
+}
+/* --------------------------------------- */
 .img-eventos {
     width: 600px;
 }
@@ -56,8 +45,17 @@ strong {
 .img-Plataforma {
     width: 400px;
 }
-
+/* -------------SECCION 1 HERO----------------- */
 .hero {
+
+}
+
+.img-perfil {
+    width: 400px;
+    border-radius: 50%;
+}
+/* ------------SECCION 2 PORTAFOLIO-------- */
+#portafolio {
 
 }
 
@@ -68,6 +66,8 @@ strong {
 .project {
 
 }
+
+.project-title 
 
 .project-course [
 
@@ -92,7 +92,7 @@ strong {
 .project-image {
 
 }
-
+/* ---------------SECCION 3 EVENTOS------------- */
 .event {
 
 }
@@ -116,7 +116,7 @@ strong {
 .event-url {
 
 }
-
+/* -------------SECCION 4 FORMULARIO CONTACTO------ */
 .contact {
 
 }
@@ -124,7 +124,7 @@ strong {
 .form-email {
 
 }
-
+/* -----------------FOOTER-------------------------- */
 .footer {
     
 }
