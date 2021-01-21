@@ -8,21 +8,28 @@ VALORES
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 /* ----------ENCABEZADO-------------- */
 header {
-    background-color: pink;
-    color: red;
+    background-color: #1b2127;
+    color: white;
 }
 
-.header {
-
+.header  a {
+    color: white;
+    text-decoration: none;
+    
 }
 
 .logo {
     width: 150px;
     padding: 20px;
+}
+
+.logo-img {
+    width: 150px;
 }
 
 .menu {
@@ -33,20 +40,14 @@ header {
     
 }
 
-strong {
-    color: rgb(0, 0, 109);
-}
-/* --------------------------------------- */
-.img-eventos {
-    width: 600px;
-}
-
-.img-Plataforma {
-    width: 400px;
-}
 /* -------------SECCION 1 HERO----------------- */
 .hero {
     height: 300px;
+    background-color: #1b2127;
+    background-image: url(img/leoyyo.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,6 +62,11 @@ h1 {
     letter-spacing: ;
     text-transform: ;
     text-decoration: ;
+    color: white;
+}
+
+strong {
+    color: #026fff;
 }
 
 .img-perfil {
@@ -77,7 +83,11 @@ h1 {
 }
 
 .project {
-
+    margin: 10px;
+    padding: 5px;
+    /* border: 1px solid red; */
+    box-shadow: black 3px 3px 15px;
+    border-radius: 10px;
 }
 
 .project-details {
