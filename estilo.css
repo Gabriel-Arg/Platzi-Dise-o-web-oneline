@@ -6,9 +6,8 @@ PROPIEDADES
 VALORES
  */
 
-/* -------SELECTOR DESCENDENTE---------------- */
-body header div nav ul li a {
-    color: blue;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ----------ENCABEZADO-------------- */
@@ -48,6 +47,10 @@ strong {
 /* -------------SECCION 1 HERO----------------- */
 .hero {
 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .img-perfil {
