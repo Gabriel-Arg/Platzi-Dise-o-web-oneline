@@ -33,7 +33,11 @@ header {
 }
 
 .menu {
+    
+}
 
+ul {
+    margin: 0px;
 }
 
 .link {
@@ -48,6 +52,7 @@ header {
     background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position: right;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,6 +68,7 @@ h1 {
     text-transform: ;
     text-decoration: ;
     color: white;
+    margin: 0px 300px 0px 0px;
 }
 
 strong {
@@ -83,15 +89,16 @@ strong {
 }
 
 .project {
-    margin: 10px;
+    margin: 30px 20px;
     padding: 5px;
     /* border: 1px solid red; */
-    box-shadow: black 3px 3px 15px;
+    box-shadow: rgba(0, 0, 0, 0.316) 2px 2px 5px;
     border-radius: 10px;
 }
 
 .project-details {
     width: 500px;
+    margin: 0px auto;
 }
 
 .project-title 
