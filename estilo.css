@@ -13,32 +13,52 @@ body {
 
 /* ----------ENCABEZADO-------------- */
 header {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
     background-color: #1b2127;
     color: white;
 }
 
-.header  a {
-    color: white;
-    text-decoration: none;
-    
-}
-
 .logo {
     width: 150px;
-    padding: 20px;
+    padding: 10px 20px 0px;
     margin: 0px;
 }
 
 .logo-img {
-    width: 150px;
+    width: 90px;
 }
 
 .menu {
-    
+    height: inherit;
+}
+
+.header ul {
+    display: flex;
+    height: inherit;
+}
+
+.header ul li {
+    height: inherit;
+}
+
+.header ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+    height: inherit;
 }
 
 ul {
     margin: 0px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .link {
@@ -47,6 +67,8 @@ ul {
 
 /* -------------SECCION 1 HERO----------------- */
 .hero {
+    display: flex;
+    align-items: center;
     height: 300px;
     background-color: #1b2127;
     background-image: url(img/leoyyo.jpg);
@@ -69,7 +91,7 @@ h1 {
     text-transform: ;
     text-decoration: ;
     color: white;
-    margin: 0px 300px 0px 0px;
+    margin: 0px;
 }
 
 strong {
@@ -162,5 +184,20 @@ strong {
 }
 /* -----------------FOOTER-------------------------- */
 .footer {
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    padding: 0px 20px;
+    background-color: #1b2127;
+    color: #fafafa;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.autor {
+    margin: 0px 0px 0px auto;
 }
