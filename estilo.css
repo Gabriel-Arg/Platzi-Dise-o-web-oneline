@@ -94,6 +94,15 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
 strong {
     color: #026fff;
 }
@@ -105,19 +114,22 @@ strong {
 /* ------------SECCION 2 PORTAFOLIO-------- */
 .portfolio {
     background-color: #fafafa;
+    padding: 20px;
 }
 
 .project {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.398) 2px 2px 5px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0px 0px 20px;
     padding: 10px;
     width: auto;
     height: auto;
 
     display: flex;
-
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .project-details {
@@ -126,30 +138,34 @@ strong {
     padding: 10px 20px;
 }
 
-.project-title 
-
-.project-course [
-
-]
-
-.project-date {
-
+.project-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px 0px 10px;
 }
 
-.project-url {
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+    color: #1b2127;
+}
 
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0px;
 }
 
 .project-description {
-
+    font-size: 20px;
 }
 
 .project-imageContainer {
     width: 500px;
+    margin: auto;
 }
 
 .project-image {
-    width: 500px;
+    max-width: 100%;
 }
 /* ---------------SECCION 3 EVENTOS------------- */
 .event {
