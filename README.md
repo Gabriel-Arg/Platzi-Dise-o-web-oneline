@@ -7,4 +7,4 @@ En éste caso desarrollamos un portfolio personal utilizando los elementos html 
 
 > <img style="width: 55%;" src="img/CapturaWeb.PNG" alt="Mokup de la pagina">
 
-###### [Contáctame](https://www.instagram.com/gabriel.diaz_arg/?hl=es-la)
+## [Contáctame](https://www.instagram.com/gabriel.diaz_arg/?hl=es-la)
