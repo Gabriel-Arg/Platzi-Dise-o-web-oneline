@@ -15,7 +15,7 @@ body {
 header {
     display: flex;
     flex-flow: wrap row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 70px;
     background-color: #1b2127;
@@ -68,14 +68,11 @@ ul {
 /* -------------SECCION 1 HERO----------------- */
 .hero {
     display: flex;
+    flex-flow: wrap row;
     align-items: center;
+    justify-content: center;
     height: 300px;
-    background-color: #1b2127;
-    background-image: url(img/leoyyo.jpg);
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
-    background-position: right;
-    
+    background-color: #1b2127;  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -108,11 +105,15 @@ strong {
 }
 
 .img-perfil {
-    width: 400px;
-    border-radius: 50%;
+    width: 300px;
+    object-fit: cover;
 }
 /* ------------SECCION 2 PORTAFOLIO-------- */
 .portfolio {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
     background-color: #fafafa;
     padding: 20px;
 }
@@ -123,7 +124,7 @@ strong {
     border-radius: 10px;
     margin: 0px 0px 20px;
     padding: 10px;
-    width: auto;
+    width: 100%;
     height: auto;
 
     display: flex;
@@ -133,7 +134,7 @@ strong {
 }
 
 .project-details {
-    width: 500px;
+    width: 400px;
     margin: 0px;
     padding: 10px 20px;
 }
@@ -178,7 +179,7 @@ strong {
 }
 
 .event {
-    margin: 20px;
+    margin: 20px 10px;
     width: 480px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.398) 2px 2px 5px;
@@ -306,4 +307,14 @@ strong {
 
 .autor {
     margin: 0px 0px 0px auto;
+}
+
+/*------------------WRAPER------------------------- */
+.wraper {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 0px auto;
 }
