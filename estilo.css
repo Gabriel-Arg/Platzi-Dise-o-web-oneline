@@ -224,12 +224,70 @@ strong {
 
 /* -------------SECCION 4 FORMULARIO CONTACTO------ */
 .contact {
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #026fff;
+    color: white;
+    height: 150px;
 }
 
 .form-email {
-
+    margin-left: 20px;
 }
+
+.form-email h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+}
+
+.form-email input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px 20px 5px 30px;
+    background-image: url(/img/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: left center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: flex;
+    margin-top: 10px;
+    background: transparent;
+    color: wheat;
+    border: 1px solid wheat;
+    padding: 5px 30px;
+    border-radius: 5px;
+} 
+
+.social {
+    display: flex;
+    margin-right: 20px;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0px 10px;
+}
+
+.social-link.twiter {
+    background-image: url(img/twitter.svg);
+}
+.social-link.facebook {
+    background-image: url(img/facebook.svg);
+}
+.social-link.github {
+    background-image: url(img/github.svg);
+}
+.social-link.instagram {
+    background-image: url(img/instagram.svg);
+}
+
+
 /* -----------------FOOTER-------------------------- */
 .footer {
     display: flex;
