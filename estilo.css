@@ -30,6 +30,7 @@ header {
 
 .logo-img {
     width: 90px;
+    filter: drop-shadow(0px 0px 10px rgb(141, 141, 141));
 }
 
 .menu {
@@ -59,10 +60,6 @@ ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
-}
-
-.link {
-    
 }
 
 /* -------------SECCION 1 HERO----------------- */
@@ -111,7 +108,7 @@ strong {
 /* ------------SECCION 2 PORTAFOLIO-------- */
 .portfolio {
     display: flex;
-    flex-flow: wrap row;
+    flex-flow: wrap column;
     justify-content: center;
     align-items: center;
     background-color: #fafafa;
@@ -226,6 +223,7 @@ strong {
 /* -------------SECCION 4 FORMULARIO CONTACTO------ */
 .contact {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: #026fff;
@@ -292,6 +290,7 @@ strong {
 /* -----------------FOOTER-------------------------- */
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     height: 80px;
@@ -315,6 +314,61 @@ strong {
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 80vw;
     margin: 0px auto;
+}
+
+/* -----------MEDIA QUERIES----------------------- */
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .wraper {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-img {
+        filter: drop-shadow(0px 0px 10px rgb(141, 141, 141));
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header .menu ul li {
+        height: 45px;
+        width: 100%;
+    }
+
+    .link {
+        text-align: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
 }
