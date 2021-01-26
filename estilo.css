@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.8vw;
+    font-size: 3.5vw;
     line-height: 1.2;
     letter-spacing: ;
     text-transform: ;
@@ -102,11 +102,11 @@ strong {
 }
 
 .hero h1 {
-    width: 50%;
+
 }
 
 .img-perfil {
-    width: 320px;
+    width: 35%;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: -40px;
