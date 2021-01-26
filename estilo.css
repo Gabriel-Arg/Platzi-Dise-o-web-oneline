@@ -30,6 +30,7 @@ header {
 
 .logo-img {
     width: 90px;
+    filter: drop-shadow(0px 0px 10px rgb(141, 141, 141));
 }
 
 .menu {
@@ -61,10 +62,6 @@ ul {
     padding: 0px;
 }
 
-.link {
-    
-}
-
 /* -------------SECCION 1 HERO----------------- */
 .hero {
     display: flex;
@@ -82,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 1.5;
+    font-size: 3.5vw;
+    line-height: 1.2;
     letter-spacing: ;
     text-transform: ;
     text-decoration: ;
@@ -104,14 +101,21 @@ strong {
     color: #026fff;
 }
 
+.hero h1 {
+
+}
+
 .img-perfil {
-    width: 300px;
+    width: 35%;
+    border-radius: 50%;
     object-fit: cover;
+    margin-bottom: -40px;
+    filter: drop-shadow(0px 0px 5px rgb(141, 141, 141));
 }
 /* ------------SECCION 2 PORTAFOLIO-------- */
 .portfolio {
     display: flex;
-    flex-flow: wrap row;
+    flex-flow: wrap column;
     justify-content: center;
     align-items: center;
     background-color: #fafafa;
@@ -134,15 +138,15 @@ strong {
 }
 
 .project-details {
-    width: 400px;
+    width: 45%;
     margin: 0px;
-    padding: 10px 20px;
+    padding: 10px 0px 10px 20px
 }
 
 .project-title {
     font-size: 30px;
     font-weight: bold;
-    margin: 0px 0px 10px;
+    margin: 0px 0px auto;
 }
 
 .project strong {
@@ -157,12 +161,12 @@ strong {
 }
 
 .project-description {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .project-imageContainer {
-    width: 500px;
-    margin: auto;
+    width: 50%;
+    margin: 0px auto 0px 0px;
 }
 
 .project-image {
@@ -176,11 +180,13 @@ strong {
 .event-list {
     display: flex;
     flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .event {
-    margin: 20px 10px;
-    width: 480px;
+    margin: 20px 5px;
+    width: 38vw;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.398) 2px 2px 5px;
     background-color:#f4fbff;
@@ -203,8 +209,9 @@ strong {
     background-color: white;
     margin-top: -40px;
     position: relative;
-    padding: 20px 30px;
+    padding: 20px 10px;
     text-align: center;
+    height: auto;
 }
 
 .event-title {
@@ -221,11 +228,13 @@ strong {
     border-radius: 10px;
     padding: 10px 20px;
     color: #026fff;
+    margin-top: 20px;
 }
 
 /* -------------SECCION 4 FORMULARIO CONTACTO------ */
 .contact {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: #026fff;
@@ -292,6 +301,7 @@ strong {
 /* -----------------FOOTER-------------------------- */
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     height: 80px;
@@ -315,6 +325,214 @@ strong {
     flex-flow: wrap row;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 80vw;
     margin: 0px auto;
+}
+
+/* -----------MEDIA QUERIES----------------------- */
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px 0px;
+    }
+    .wraper {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .logo-img {
+        filter: drop-shadow(0px 0px 10px rgb(141, 141, 141));
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header .menu ul li {
+        height: 45px;
+        width: 100%;
+    }
+    .link {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .hero .wraper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .img-perfil {
+        width: 40%;
+        margin-bottom: -30px;
+    }
+
+    .project {
+        width: auto;
+    }
+    .project-details {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .project-image {
+        max-width: 100%;
+    }
+
+    .event {
+        width: 47.6%;
+    }
+    .event-imageContainer {
+        width: 100%;
+    }
+    .event-url {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wraper {
+        
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero {
+        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .hero .wraper {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-perfil {
+        /* width: 40%;
+        margin-bottom: -30px; */
+        width: 55%;
+    }
+    .hero h1 {
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 6.5vw;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+    .project-details {
+        width: auto;
+        padding: 0px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+
+    }
+    .project-imageContainer {
+        width: auto;
+        margin: 0px auto;
+    }
+    .project-title {
+        margin: 10px 0px;
+        font-size: 1em;
+    }
+    .project-course,
+    .project-date,
+    .project-url {
+        margin: 4px 0px;
+        font-size: 0.5em;
+    }
+
+    .event-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .event {
+        width: auto;
+    }
+    .event-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .event-url {
+        margin: 0px;
+        width: 80%;
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .form-email {
+        margin: 40px 0px;
+        text-align: center;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        al
+    }
+    .form-email input {
+    
+    }
+    .social {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .autor {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .project-description {
+        font-size: 12px;
+    }
 }
