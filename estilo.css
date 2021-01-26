@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 1.5;
+    font-size: 3.8vw;
+    line-height: 1.2;
     letter-spacing: ;
     text-transform: ;
     text-decoration: ;
@@ -101,9 +101,16 @@ strong {
     color: #026fff;
 }
 
+.hero h1 {
+    width: 50%;
+}
+
 .img-perfil {
-    width: 300px;
+    width: 320px;
+    border-radius: 50%;
     object-fit: cover;
+    margin-bottom: -40px;
+    filter: drop-shadow(0px 0px 5px rgb(141, 141, 141));
 }
 /* ------------SECCION 2 PORTAFOLIO-------- */
 .portfolio {
@@ -360,6 +367,22 @@ strong {
         justify-content: center;
     }
 
+    .hero {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .hero .wraper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .img-perfil {
+        width: 40%;
+        margin-bottom: -30px;
+    }
+
     .project {
         width: auto;
     }
@@ -391,6 +414,35 @@ strong {
     .menu ul {
         display: flex;
         flex-direction: column;
+    }
+
+    .hero {
+        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .hero .wraper {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-perfil {
+        /* width: 40%;
+        margin-bottom: -30px; */
+        width: 55%;
+    }
+    .hero h1 {
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 6.5vw;
     }
 
     .project {
@@ -442,6 +494,40 @@ strong {
     .event-url {
         margin: 0px;
         width: 80%;
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .form-email {
+        margin: 40px 0px;
+        text-align: center;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        al
+    }
+    .form-email input {
+    
+    }
+    .social {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .autor {
+        margin: 0px;
     }
 }
 
