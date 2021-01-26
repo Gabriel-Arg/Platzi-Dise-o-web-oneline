@@ -131,15 +131,15 @@ strong {
 }
 
 .project-details {
-    width: 400px;
+    width: 45%;
     margin: 0px;
-    padding: 10px 20px;
+    padding: 10px 0px 10px 20px
 }
 
 .project-title {
     font-size: 30px;
     font-weight: bold;
-    margin: 0px 0px 10px;
+    margin: 0px 0px auto;
 }
 
 .project strong {
@@ -154,12 +154,12 @@ strong {
 }
 
 .project-description {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .project-imageContainer {
-    width: 500px;
-    margin: auto;
+    width: 50%;
+    margin: 0px auto 0px 0px;
 }
 
 .project-image {
@@ -173,11 +173,13 @@ strong {
 .event-list {
     display: flex;
     flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .event {
-    margin: 20px 10px;
-    width: 480px;
+    margin: 20px 5px;
+    width: 38vw;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.398) 2px 2px 5px;
     background-color:#f4fbff;
@@ -200,8 +202,9 @@ strong {
     background-color: white;
     margin-top: -40px;
     position: relative;
-    padding: 20px 30px;
+    padding: 20px 10px;
     text-align: center;
+    height: auto;
 }
 
 .event-title {
@@ -218,6 +221,7 @@ strong {
     border-radius: 10px;
     padding: 10px 20px;
     color: #026fff;
+    margin-top: 20px;
 }
 
 /* -------------SECCION 4 FORMULARIO CONTACTO------ */
@@ -323,12 +327,11 @@ strong {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     header {
         height: auto;
         padding: 20px 0px;
     }
-
     .wraper {
         width: 90vw;
         display: flex;
@@ -337,38 +340,113 @@ strong {
         align-items: center;
         text-align: center;
     }
-
     .logo-img {
         filter: drop-shadow(0px 0px 10px rgb(141, 141, 141));
     }
-
     .menu {
         width: 100%;
     }
-
     .menu ul {
         display: flex;
         justify-content: space-around;
         width: 100%;
     }
-
     header .menu ul li {
         height: 45px;
         width: 100%;
     }
-
     .link {
         text-align: center;
         justify-content: center;
     }
 
+    .project {
+        width: auto;
+    }
+    .project-details {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .project-image {
+        max-width: 100%;
+    }
 
+    .event {
+        width: 47.6%;
+    }
+    .event-imageContainer {
+        width: 100%;
+    }
+    .event-url {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    
+    .wraper {
+        
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+    .project-details {
+        width: auto;
+        padding: 0px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+
+    }
+    .project-imageContainer {
+        width: auto;
+        margin: 0px auto;
+    }
+    .project-title {
+        margin: 10px 0px;
+        font-size: 1em;
+    }
+    .project-course,
+    .project-date,
+    .project-url {
+        margin: 4px 0px;
+        font-size: 0.5em;
+    }
+
+    .event-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .event {
+        width: auto;
+    }
+    .event-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .event-url {
+        margin: 0px;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 320px) {
-    
+    .project-description {
+        font-size: 12px;
+    }
 }
