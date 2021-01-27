@@ -5,6 +5,6 @@ En éste caso desarrollamos un portfolio personal utilizando los elementos html 
 
 <img src="/img/LogoCurso.webp" alt="Logo del curso" style="width: 200px;">
 
-> <img style="width: 55%;" src="img/CapturaWeb.PNG" alt="Mokup de la pagina">
+> <img style="width: 30%;" src="img/screenshot.png" alt="Mokup de la pagina">
 
 ## [Contáctame](https://www.instagram.com/gabriel.diaz_arg/?hl=es-la)

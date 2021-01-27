@@ -68,7 +68,7 @@ ul {
     flex-flow: wrap row;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: auto;
     background-color: #1b2127;  
 }
 
@@ -79,11 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.5vw;
-    line-height: 1.2;
-    letter-spacing: ;
-    text-transform: ;
-    text-decoration: ;
+    font-size: 50px;
+    line-height: 1.4;
     color: white;
     margin: 0px;
 }
@@ -101,12 +98,21 @@ strong {
     color: #026fff;
 }
 
-.hero h1 {
-
+.hero-h1 {
+    width: 65%;
+    height: auto;
+}
+.hero-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
 }
 
+.hero h1 {
+    font-size: 46px;
+}
 .img-perfil {
-    width: 35%;
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: -40px;
@@ -331,7 +337,9 @@ strong {
 
 /* -----------MEDIA QUERIES----------------------- */
 @media screen and (max-width: 1024px) {
-
+    .hero h1 {
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -378,8 +386,11 @@ strong {
         align-items: center;
         text-align: left;
     }
+    .hero h1 {
+        font-size: 25px;
+    }
     .img-perfil {
-        width: 40%;
+        width: 100%;
         margin-bottom: -30px;
     }
 
@@ -425,24 +436,23 @@ strong {
         margin-bottom: 20px;
     }
     .hero .wraper {
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left; */
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .img-perfil {
-        /* width: 40%;
-        margin-bottom: -30px; */
-        width: 55%;
+    .hero-h1 {
+        width: 100%;
+    }
+    .hero-img {
+        width: 50%;
     }
     .hero h1 {
-        margin-bottom: 20px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .img-perfil {
         width: 100%;
-        font-size: 6.5vw;
+        margin-bottom: -30px;
     }
 
     .project {
@@ -532,6 +542,14 @@ strong {
 }
 
 @media screen and (max-width: 320px) {
+    .hero-img {
+        width: 70%;
+    }
+    .img-perfil {
+        width: 100%;
+        margin-bottom: -30px;
+    }
+
     .project-description {
         font-size: 12px;
     }
