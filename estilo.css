@@ -178,6 +178,11 @@ strong {
 .project-image {
     max-width: 100%;
 }
+/* ---------------------VIDEOS------------------ */
+.video01 {
+    width: 100%;
+    border-radius: 10px;
+}
 /* ---------------SECCION 3 EVENTOS------------- */
 .event-list-title {
     margin: 20px;
@@ -419,9 +424,7 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
-    .wraper {
-        
-    }
+
     .menu ul {
         display: flex;
         flex-direction: column;
@@ -486,6 +489,20 @@ strong {
     .project-url {
         margin: 4px 0px;
         font-size: 0.5em;
+    }
+
+
+    .wraper-video {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .video01 {
+        width: 100%;
+        border-radius: 0px;
     }
 
     .event-list {
