@@ -10,6 +10,23 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
 }
+/* ----------BURGUER BUTTON----------- */
+.burger-button {
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #0270ffb6;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    z-index: 4;
+}
+.burger-img {
+    width: 35px;
+}
 
 /* ----------ENCABEZADO-------------- */
 header {
@@ -424,7 +441,23 @@ strong {
 }
 
 @media screen and (max-width: 480px) {
+    .burger-button {
+        display: flex;
+    }
 
+    .menu {
+        background-color: #026fff;
+        width: 60vw;
+        height: 100%;
+        font-size: 22px;
+
+        position: fixed;
+        left: 0vw;
+        top: 0px;
+        z-index: 3;
+
+
+    }
     .menu ul {
         display: flex;
         flex-direction: column;
