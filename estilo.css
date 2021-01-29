@@ -24,9 +24,6 @@ body {
     top: 5px;
     z-index: 4;
 }
-.burger-img {
-    width: 35px;
-}
 
 /* ----------ENCABEZADO-------------- */
 header {
@@ -452,12 +449,16 @@ strong {
         font-size: 22px;
 
         position: fixed;
-        left: 0vw;
+        left: -60vw;
         top: 0px;
         z-index: 3;
 
-
     }
+    .menu.menu-active {
+        left: 0px;
+        transition: 0.3s;
+    }
+
     .menu ul {
         display: flex;
         flex-direction: column;
