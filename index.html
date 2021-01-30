@@ -35,7 +35,7 @@
 
 <body>
 <!-- -------------------------------BURGER BUTTON--------------------------------------------------- -->
-    <i class="icon-menu burger-button">
+    <i class="burger-button">
         <img src="icon/Menu-blanco.svg" alt="Icono de menu hamburgueza">
     </i>
 
@@ -214,6 +214,49 @@
             <p>Diseñado by <a href="https://www.instagram.com/gabriel.diaz_arg/?hl=es-la">Gabriel-Arg</a></p>
         </div>
     </footer>
+
+<!-- --------------------------------FUNCION JS DEL BOTON HAMBURGUEZA----------------------------- -->
+
+    <script>
+
+        // Dejar un mensaje en la consola
+        console.log ('A continuación haremos un llamado al selector del menu');
+
+        // Creamos SELECTORES
+        document.querySelector ('.menu');
+        document.querySelector ('.burger-button');
+        // document.querySelector ('menu-active');
+
+        // Creamos VARIABLES de tipo COSTANTES
+        const menu = document.querySelector ('.menu');
+        const burguerButton = document.querySelector ('.burger-button');
+        // const menuActivo = document.querySelector ('menu-active');
+
+        //Dejamos como mensaje las VARIABLES que hemos creado y se verán en la consola.
+        console.log (menu);
+        console.log (burguerButton);
+
+        // Agregamos una CLASE a la VARIABLE llamada "menu"
+
+        // Creamos un EVENTO al botón hamburgueza. 
+        // El siguiente evento dice que al hacerle clic al burgerButton se desplegará el menu-active.
+        burguerButton.addEventListener ('click', desplegar)
+
+        // Creamos una FUNCIÓN y la llamaremos "desplegar"
+        function desplegar () {
+            if (menu.classList.contains ('menu-active')) {
+                    menu.classList.remove ('menu-active');
+            }
+            else {
+                menu.classList.add ('menu-active')
+            }
+            
+        }
+
+    </script>
+
+    <!-- Las VARIABLES de tipo COSTANTES, nos permiten ponerle NOMBRES CORTOS Y SENCILLOS a lineas
+    de código largas y complejas. De ese modo las podemos usar con esos nombres cortos. -->
 
 
 

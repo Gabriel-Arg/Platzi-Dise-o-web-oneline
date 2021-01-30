@@ -440,7 +440,9 @@ strong {
 @media screen and (max-width: 480px) {
     .burger-button {
         display: flex;
+        cursor: pointer;
     }
+
 
     .menu {
         background-color: #026fff;
@@ -452,12 +454,12 @@ strong {
         left: -60vw;
         top: 0px;
         z-index: 3;
-
-    }
-    .menu.menu-active {
-        left: 0px;
         transition: 0.3s;
     }
+    .menu-active {
+        left: 0vw;
+    }
+
 
     .menu ul {
         display: flex;
