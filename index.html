@@ -34,6 +34,11 @@
 </head>
 
 <body>
+<!-- -------------------------------BURGER BUTTON--------------------------------------------------- -->
+    <i class="burger-button">
+        <img src="icon/Menu-blanco.svg" alt="Icono de menu hamburgueza">
+    </i>
+
 <!----------------------------------ENCABEZADO--------------------------------------------------------->
 <header class="header">
 
@@ -42,7 +47,7 @@
                 <img class="logo-img" src="img/logo-fronend.png" alt="Logo de fronend">
             </figure>
 
-            <nav class="menu">
+            <nav class="menu-oculto menu-activo">
                 <ul>
                     <li> <a class="link" href="#portafolio"> Portafolio </a> </li>
                     <li> <a class="link" href="#eventos"> Experiencia </a> </li>
@@ -118,11 +123,11 @@
 
 <!-------------------------------------SECCION 3 EVENTOS ------------------------------------------------->
     <div class="wraper">
-        <h2 class="event-list-title"> Más sobre mi experiencia </h2>
+        <h2 id="eventos" class="event-list-title"> Más sobre mi experiencia </h2>
     </div>
 
     <div class="wraper">
-        <section id="eventos" class="event-list">
+        <section class="event-list">
 
             <article class="event">
                 <figure class="event-imageContainer">
@@ -210,11 +215,41 @@
         </div>
     </footer>
 
+<!-- --------------------------------FUNCION JS DEL BOTON HAMBURGUEZA----------------------------- -->
 
+    <script>
+        // Dejar un mensaje en la consola
+        console.log ('A continuación haremos un llamado al selector del menu');
 
+        // Creamos SELECTORES
+        document.querySelector ('.menu-activo');
+        document.querySelector ('.burger-button');
+        // document.querySelector ('menu-active');
 
+        // Creamos VARIABLES de tipo COSTANTES
+        const menu = document.querySelector ('.menu-activo');
+        const burguerButton = document.querySelector ('.burger-button');
 
+        //Dejamos como mensaje las VARIABLES que hemos creado y se verán en la consola.
+        console.log (menu);
+        console.log (burguerButton);
 
+        // Creamos un EVENTO al botón hamburgueza. 
+        // El siguiente evento dice que al hacerle clic al burgerButton se desplegará el menu-active.
+        burguerButton.addEventListener ('click', desplegar)
+
+        // Creamos una FUNCIÓN y la llamaremos "desplegar"
+        function desplegar () {
+            if (menu.classList.contains ('menu-oculto')) {
+                    menu.classList.remove ('menu-oculto');
+            }
+            else {
+                menu.classList.add ('menu-oculto')
+            }
+        }
+    </script>
+    <!-- Las VARIABLES de tipo COSTANTES, nos permiten ponerle NOMBRES CORTOS Y SENCILLOS a lineas
+    de código largas y complejas. De ese modo las podemos usar con esos nombres cortos. -->
 
 
 
